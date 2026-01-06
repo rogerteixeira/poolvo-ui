@@ -64,7 +64,7 @@ function DrawerOverlay({ className, style, ...props }: DrawerOverlayProps) {
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: '#00000080',
         zIndex: 'var(--poolvo-z-modal)',
         animation: 'poolvo-fade-in 200ms ease',
         ...style,
@@ -271,9 +271,16 @@ function DrawerClose({ className, style, children, ...props }: DrawerCloseProps)
         cursor: 'pointer',
         color: 'var(--poolvo-muted-fg)',
         transition: 'all var(--poolvo-transition-fast)',
+        outline: 'none',
         ...style,
       }}
       onClick={onClose}
+      onFocus={(e) => {
+        e.currentTarget.style.boxShadow = '0 0 0 2px var(--poolvo-bg), 0 0 0 4px var(--poolvo-accent)';
+      }}
+      onBlur={(e) => {
+        e.currentTarget.style.boxShadow = '';
+      }}
       aria-label="Close drawer"
       {...props}
     >

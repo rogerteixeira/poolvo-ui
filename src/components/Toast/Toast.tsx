@@ -160,6 +160,15 @@ function ToastItem({ toast, onClose }: ToastItemProps) {
           color: 'inherit',
           opacity: 0.7,
           transition: 'opacity var(--poolvo-transition-fast)',
+          outline: 'none',
+        }}
+        onFocus={(e) => {
+          e.currentTarget.style.opacity = '1';
+          e.currentTarget.style.boxShadow = '0 0 0 2px var(--poolvo-bg), 0 0 0 4px var(--poolvo-accent)';
+        }}
+        onBlur={(e) => {
+          e.currentTarget.style.opacity = '0.7';
+          e.currentTarget.style.boxShadow = '';
         }}
         aria-label="Dismiss"
       >

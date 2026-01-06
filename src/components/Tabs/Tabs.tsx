@@ -146,11 +146,13 @@ function TabsTrigger({ value, disabled, className, style, children, ...props }: 
       onClick={() => !disabled && onChange(value)}
       onFocus={(e) => {
         e.currentTarget.style.color = 'var(--poolvo-fg)';
+        e.currentTarget.style.boxShadow = '0 0 0 2px var(--poolvo-bg), 0 0 0 4px var(--poolvo-accent)';
       }}
       onBlur={(e) => {
         if (!isSelected) {
           e.currentTarget.style.color = 'var(--poolvo-muted-fg)';
         }
+        e.currentTarget.style.boxShadow = '';
       }}
       {...props}
     >
@@ -180,6 +182,12 @@ function TabsPanel({ value, className, style, children, ...props }: TabsPanelPro
         padding: 'var(--poolvo-spacing-4) 0',
         outline: 'none',
         ...style,
+      }}
+      onFocus={(e) => {
+        e.currentTarget.style.boxShadow = '0 0 0 2px var(--poolvo-bg), 0 0 0 4px var(--poolvo-accent)';
+      }}
+      onBlur={(e) => {
+        e.currentTarget.style.boxShadow = '';
       }}
       {...props}
     >

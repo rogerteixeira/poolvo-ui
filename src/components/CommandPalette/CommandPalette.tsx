@@ -131,7 +131,7 @@ export function CommandPaletteProvider({
               style={{
                 position: 'fixed',
                 inset: 0,
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                backgroundColor: '#00000080',
                 zIndex: 'var(--poolvo-z-modal)',
                 animation: 'poolvo-fade-in 100ms ease',
               }}
@@ -208,6 +208,13 @@ export function CommandPaletteProvider({
                     fontFamily: 'var(--poolvo-font-sans)',
                     fontSize: 'var(--poolvo-font-size-sm)',
                     color: 'var(--poolvo-fg)',
+                  }}
+                  onFocus={(e) => {
+                    e.currentTarget.style.boxShadow = '0 0 0 2px var(--poolvo-bg), 0 0 0 4px var(--poolvo-accent)';
+                    e.currentTarget.style.borderRadius = 'var(--poolvo-radius-sm)';
+                  }}
+                  onBlur={(e) => {
+                    e.currentTarget.style.boxShadow = '';
                   }}
                   aria-autocomplete="list"
                   aria-controls="command-list"

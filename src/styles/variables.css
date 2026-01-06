@@ -43,11 +43,11 @@
   --poolvo-radius-full: 9999px;
 
   --poolvo-shadow-none: none;
-  --poolvo-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --poolvo-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
-  --poolvo-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
-  --poolvo-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
-  --poolvo-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.12);
+  --poolvo-shadow-xs: 0 1px 2px #0000000A;
+  --poolvo-shadow-sm: 0 2px 4px #0000000F;
+  --poolvo-shadow-md: 0 4px 8px #00000014;
+  --poolvo-shadow-lg: 0 8px 16px #0000001A;
+  --poolvo-shadow-xl: 0 16px 32px #0000001F;
 
   --poolvo-font-size-xs: 0.75rem;
   --poolvo-font-size-sm: 0.875rem;
@@ -90,11 +90,11 @@
   --poolvo-border: var(--poolvo-color-gray-900);
   --poolvo-border-strong: var(--poolvo-color-gray-500);
 
-  --poolvo-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
-  --poolvo-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
-  --poolvo-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
-  --poolvo-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35);
-  --poolvo-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4);
+    --poolvo-shadow-xs: 0 1px 2px #00000033;
+    --poolvo-shadow-sm: 0 2px 4px #00000040;
+    --poolvo-shadow-md: 0 4px 8px #0000004D;
+    --poolvo-shadow-lg: 0 8px 16px #00000059;
+    --poolvo-shadow-xl: 0 16px 32px #00000066;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -106,10 +106,10 @@
     --poolvo-border: var(--poolvo-color-gray-900);
     --poolvo-border-strong: var(--poolvo-color-gray-500);
 
-    --poolvo-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
-    --poolvo-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
-    --poolvo-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
-    --poolvo-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35);
-    --poolvo-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4);
+    --poolvo-shadow-xs: 0 1px 2px #00000033;
+    --poolvo-shadow-sm: 0 2px 4px #00000040;
+    --poolvo-shadow-md: 0 4px 8px #0000004D;
+    --poolvo-shadow-lg: 0 8px 16px #00000059;
+    --poolvo-shadow-xl: 0 16px 32px #00000066;
   }
 }

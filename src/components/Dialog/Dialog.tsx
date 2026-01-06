@@ -62,7 +62,7 @@ function DialogOverlay({ className, style, ...props }: DialogOverlayProps) {
       style={{
         position: 'fixed',
         inset: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: '#00000080',
         zIndex: 'var(--poolvo-z-modal)',
         animation: 'poolvo-fade-in 150ms ease',
         ...style,
@@ -231,9 +231,16 @@ function DialogClose({ className, style, children, ...props }: DialogCloseProps)
         cursor: 'pointer',
         color: 'var(--poolvo-muted-fg)',
         transition: 'all var(--poolvo-transition-fast)',
+        outline: 'none',
         ...style,
       }}
       onClick={onClose}
+      onFocus={(e) => {
+        e.currentTarget.style.boxShadow = '0 0 0 2px var(--poolvo-bg), 0 0 0 4px var(--poolvo-accent)';
+      }}
+      onBlur={(e) => {
+        e.currentTarget.style.boxShadow = '';
+      }}
       aria-label="Close dialog"
       {...props}
     >
