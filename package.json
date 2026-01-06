@@ -1,15 +1,38 @@
 {
-  "name": "vite-typescript-starter",
-  "private": true,
-  "version": "0.0.0",
+  "name": "poolvo-ui",
+  "version": "0.9.0",
+  "private": false,
   "type": "module",
+  "main": "./dist/poolvo-ui.cjs",
+  "module": "./dist/poolvo-ui.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/poolvo-ui.js",
+      "require": "./dist/poolvo-ui.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.5.3",
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "vite-plugin-dts": "^3.9.1"
   }
 }

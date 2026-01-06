@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --poolvo-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --poolvo-font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', Consolas, monospace;
+
+  --poolvo-color-black: #000000;
+  --poolvo-color-white: #FFFFFF;
+  --poolvo-color-gray-900: #2C2C2C;
+  --poolvo-color-gray-500: #6B6B6B;
+  --poolvo-color-gray-100: #F5F5F5;
+  --poolvo-color-accent: #64748B;
+
+  --poolvo-bg: var(--poolvo-color-white);
+  --poolvo-fg: var(--poolvo-color-black);
+  --poolvo-muted: var(--poolvo-color-gray-100);
+  --poolvo-muted-fg: var(--poolvo-color-gray-500);
+  --poolvo-border: var(--poolvo-color-gray-100);
+  --poolvo-border-strong: var(--poolvo-color-gray-500);
+  --poolvo-accent: var(--poolvo-color-accent);
+  --poolvo-accent-fg: var(--poolvo-color-white);
+
+  --poolvo-spacing-0: 0px;
+  --poolvo-spacing-0-5: 2px;
+  --poolvo-spacing-1: 4px;
+  --poolvo-spacing-1-5: 6px;
+  --poolvo-spacing-2: 8px;
+  --poolvo-spacing-2-5: 10px;
+  --poolvo-spacing-3: 12px;
+  --poolvo-spacing-4: 16px;
+  --poolvo-spacing-5: 20px;
+  --poolvo-spacing-6: 24px;
+  --poolvo-spacing-8: 32px;
+  --poolvo-spacing-10: 40px;
+  --poolvo-spacing-12: 48px;
+  --poolvo-spacing-16: 64px;
+
+  --poolvo-radius-none: 0px;
+  --poolvo-radius-sm: 4px;
+  --poolvo-radius-md: 8px;
+  --poolvo-radius-lg: 12px;
+  --poolvo-radius-xl: 16px;
+  --poolvo-radius-full: 9999px;
+
+  --poolvo-shadow-none: none;
+  --poolvo-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --poolvo-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --poolvo-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --poolvo-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --poolvo-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.12);
+
+  --poolvo-font-size-xs: 0.75rem;
+  --poolvo-font-size-sm: 0.875rem;
+  --poolvo-font-size-base: 1rem;
+  --poolvo-font-size-lg: 1.125rem;
+  --poolvo-font-size-xl: 1.25rem;
+  --poolvo-font-size-2xl: 1.5rem;
+  --poolvo-font-size-3xl: 1.875rem;
+  --poolvo-font-size-4xl: 2.25rem;
+  --poolvo-font-size-5xl: 3rem;
+
+  --poolvo-font-weight-normal: 400;
+  --poolvo-font-weight-medium: 500;
+  --poolvo-font-weight-semibold: 600;
+
+  --poolvo-line-height-tight: 1.2;
+  --poolvo-line-height-snug: 1.375;
+  --poolvo-line-height-normal: 1.5;
+  --poolvo-line-height-relaxed: 1.625;
+
+  --poolvo-z-base: 0;
+  --poolvo-z-dropdown: 100;
+  --poolvo-z-sticky: 200;
+  --poolvo-z-modal: 300;
+  --poolvo-z-popover: 400;
+  --poolvo-z-toast: 500;
+  --poolvo-z-tooltip: 600;
+
+  --poolvo-transition-fast: 150ms ease;
+  --poolvo-transition-normal: 200ms ease;
+  --poolvo-transition-slow: 300ms ease;
+}
+
+[data-theme='dark'],
+.poolvo-dark {
+  --poolvo-bg: var(--poolvo-color-black);
+  --poolvo-fg: var(--poolvo-color-white);
+  --poolvo-muted: var(--poolvo-color-gray-900);
+  --poolvo-muted-fg: var(--poolvo-color-gray-500);
+  --poolvo-border: var(--poolvo-color-gray-900);
+  --poolvo-border-strong: var(--poolvo-color-gray-500);
+
+  --poolvo-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --poolvo-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --poolvo-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --poolvo-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35);
+  --poolvo-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not(.poolvo-light) {
+    --poolvo-bg: var(--poolvo-color-black);
+    --poolvo-fg: var(--poolvo-color-white);
+    --poolvo-muted: var(--poolvo-color-gray-900);
+    --poolvo-muted-fg: var(--poolvo-color-gray-500);
+    --poolvo-border: var(--poolvo-color-gray-900);
+    --poolvo-border-strong: var(--poolvo-color-gray-500);
+
+    --poolvo-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --poolvo-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+    --poolvo-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --poolvo-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35);
+    --poolvo-shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4);
+  }
+}

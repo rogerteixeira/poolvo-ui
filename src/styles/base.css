@@ -1,0 +1,17 @@
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.poolvo-base {
+  font-family: var(--poolvo-font-sans);
+  font-size: var(--poolvo-font-size-base);
+  line-height: var(--poolvo-line-height-normal);
+  color: var(--poolvo-fg);
+  background-color: var(--poolvo-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
